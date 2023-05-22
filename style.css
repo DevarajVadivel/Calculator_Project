@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(assets/bg.jpg) no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 5px 0px 5px;
+}
+
+main {
+  height: 90%;
+  min-width: 30%;
+  background: rgba(19, 122, 244, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cal-outer {
+  height: inherit;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#screen {
+  height: 30%;
+  width: 80%;
+  background: rgba(19, 19, 19, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-shrink: 1;
+}
+
+#screen span {
+  /* height:auto; */
+  width: 100%;
+  /* display: inline-block; */
+  /* border: 1px solid black; */
+  font-size: xx-large;
+  color: white;
+  text-align: end;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  overflow-wrap: break-word;
+  /* overflow-inline: hidden; compatibilty issues  */
+}
+
+#button-section {
+  height: 65%;
+  width: 80%;
+  /* min-height: 550px; */
+  background: rgba(19, 19, 19, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: flex-start;
+  overflow: auto;
+  padding: 10px;
+  flex-shrink: 1;
+}
+
+.button {
+  background: rgba(31, 125, 241, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  transition: 0.5s;
+  height: 14%;
+  width: 14%;
+  margin: 14px 15px 0px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  /* flex: auto; */
+}
+
+.button:hover {
+  /* background: rgba(72, 121, 180, 0.324); */
+  /* background: rgba( 19, 19, 19,0); */
+  background: rgba(31, 125, 241, 0);
+  backdrop-filter: blur(2px);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+.button span {
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+
+#button-section div:last-child {
+  width: 38%;
+  border-radius: 45%;
+}
